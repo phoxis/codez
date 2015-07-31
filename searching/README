@@ -1,0 +1,1 @@
+This is an implementation of some searching algorithms which can search array with any type of data and has a uniform interface as in stdlib bsearch function
