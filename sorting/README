@@ -1,0 +1,1 @@
+This is an implementation of common sorting algorithms which can sort array of any type of data and has a uniform interface as in stdlib qsort function.
