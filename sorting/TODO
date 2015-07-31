@@ -1,0 +1,8 @@
+[For now]
+
+[+] Write better test drivers to cover various cases
+[+] Performance benchmark for merge sort, quick sort, heap sort. Improve performance of these algorithms.
+[+] Implement a few other sorting algorithms
+[+] Write reentrant interface version so that we can pass additional arguments to compare function
+
+
