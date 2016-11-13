@@ -1,0 +1,36 @@
+[Compilation]
+
+g++ -O3 -std=c++11 driver.cpp wchar_to_int_mapper.cpp trie.cpp -Wall -Wextra -o dict_search
+
+OR, if you have an older gcc then the followings
+
+g++ -O3 -std=c++0x driver.cpp wchar_to_int_mapper.cpp trie.cpp -Wall -Wextra -o dict_search
+
+[Execution]
+
+dict_search bengali_word_list.txt
+
+
+[NOTES]
+
+(+) The 'driver.cpp' is written to use the APIs provided by the other files. Therefore this is a demo file to test the features. The executable right now will work only for Bengali words. To change it we just need to load with the appropriate character set.
+
+(+) Use the APIs as shown in 'driver.cpp' in other programs.
+
+(+) Need some more requirements
+
+(+) Does not output in a separate file. Right now redirect output to file as follows, if the executing terminal does not support utf-8.
+
+    ./dict_search bengali_word_list.txt > output_file
+    
+(+) Will the filenames be in bengali?
+    
+[WARNING]
+
+(+) VERY COSTLY ON MEMORY. More than 500 Kb per node, which is extremely costly. For the provided small Bengali word list, it works file.
+    Loading long list of words will explode the memory.
+    
+    
+[OPTIONS]
+
+(+) Patrica or Bit-represented Trie. Will depend on the requirements and time available.
